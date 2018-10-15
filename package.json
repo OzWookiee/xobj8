@@ -1,0 +1,38 @@
+{
+    "name": "obj8",
+    "displayName": "X-Plane OBJ8 Data Definition",
+    "description": "Provides support for the X-Plane OBJ8 Data Definition, including highlighting, formating and snippets",
+    "version": "0.0.1",
+    "publisher": "OzWookiee",
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "icon": "images/icon.png",
+    "contributes": {
+        "languages": [{
+            "id": "obj8",
+            "aliases": ["X-Plane OBJ8", "obj8"],
+            "extensions": [".obj"],
+            "firstLine": "^I|A",
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "obj8",
+            "scopeName": "source.obj8",
+            "path": "./syntaxes/obj8.tmLanguage.json"
+        }]
+    },
+    "license": "SEE LICENSE IN LICENSE.txt",
+    "bugs": {
+        "url": "https://github.com/OzWookiee/xplane-obj8/issues",
+        "email": "beejay@bristowstagg.net"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/OzWookiee/xplane-obj8.git"
+    },
+    "homepage": "https://github.com/OzWookiee/xplane-obj8/blob/master/README.md"
+}
